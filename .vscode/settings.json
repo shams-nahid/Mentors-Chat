@@ -1,0 +1,22 @@
+{
+  "window.zoomLevel": 0,
+  "editor.fontWeight": "bold",
+  "editor.fontSize": 18,
+  "workbench.colorTheme": "Visual Studio Dark",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "editor.renderWhitespace": "all",
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.enable": true,
+  "prettier.singleQuote": true
+}
