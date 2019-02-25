@@ -1,7 +1,7 @@
 {
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "editor.fontWeight": "bold",
-  "editor.fontSize": 18,
+  "editor.fontSize": 20,
   "workbench.colorTheme": "Visual Studio Dark",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
@@ -13,8 +13,8 @@
     "editor.tabSize": 2
   },
   "editor.renderWhitespace": "all",
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": false,
   "editor.formatOnType": true,
   "eslint.autoFixOnSave": true,
   "eslint.enable": true,
