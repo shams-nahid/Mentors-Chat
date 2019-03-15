@@ -2,7 +2,7 @@
   "window.zoomLevel": 1,
   "editor.fontWeight": "bold",
   "editor.fontSize": 20,
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Monokai",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
