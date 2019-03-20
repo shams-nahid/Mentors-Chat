@@ -69,7 +69,7 @@ class UserPanel extends Component {
     const { storageRef, userRef, blob, metadata } = this.state;
 
     storageRef
-      .child(`avatars/user-${userRef.uid}`)
+      .child(`avatars/user/${userRef.uid}`)
       .put(blob, metadata)
       .then(snap => {
         snap.ref.getDownloadURL()
@@ -119,7 +119,7 @@ class UserPanel extends Component {
           <Grid.Row style={{ padding: '1.2em', margin: 0 }}>
             <Header inverted floated='left' as='h2'>
               <Icon name='code' />
-              <Header.Content>DevChat</Header.Content>
+              <Header.Content>Mentors</Header.Content>
             </Header>
             <Header style={{ padding: '0.25em' }} as='h4' inverted>
               <Dropdown

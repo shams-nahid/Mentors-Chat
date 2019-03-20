@@ -24,13 +24,24 @@ class MessageForm extends Component {
     emojiPicker: false,
   };
 
+  componentWillUnmount() {
+    if (this.state.uploadTask !== null) {
+      this.state.uploadTask.cancel();
+      this.setState({ uploadTask: null });
+    }
+  }
+
   openModal = () => this.setState({ modal: true });
 
   closeModal = () => this.setState({ modal: false });
 
   handleChange = event => this.setState({ [event.target.name]: event.target.value });
 
-  handleKeyDown = () => {
+  handleKeyDown = (event) => {
+    if (event.ctrlKey && event.keyCode === 13) {
+      this.sendMessage();
+    }
+
     const { message, typingRef, user, channel } = this.state;
     if (message) {
       typingRef
@@ -123,7 +134,7 @@ class MessageForm extends Component {
 
   getPath = () => {
     if (this.props.isPrivateChannel) {
-      return `chat/private-${this.state.channel.id}`;
+      return `chat/private/${this.state.channel.id}`;
     } else {
       return 'chat/public';
     }
@@ -196,7 +207,7 @@ class MessageForm extends Component {
           fluid
           name='message'
           onChange={this.handleChange}
-          onKeyDown={this.handleKeyDown}
+          onKeyDown={this.handleKeyDown.bind(this)}
           value={message}
           ref={node => (this.messageInputRef = node)}
           style={{ marginBottom: "0.7em" }}
