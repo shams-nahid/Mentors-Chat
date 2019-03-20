@@ -32,6 +32,11 @@ body,
   z-index: 200;
 }
 
+.emojipicker {
+  position: absolute;
+  
+}
+
 /* message.js */
 .message__self {
   border-left: 2px solid orange;
