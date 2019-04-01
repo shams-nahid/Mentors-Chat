@@ -22,6 +22,7 @@ It's a live [chat application](https://react-slack-clone-5d445.firebaseapp.com/)
 ### Upcoming Features
 
 * Custom app
+* Desktop application (Windows and linux)
 
 ## Tech stack
 * React
