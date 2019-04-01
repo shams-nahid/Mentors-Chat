@@ -24,7 +24,6 @@ It's a live [chat application](https://react-slack-clone-5d445.firebaseapp.com/)
 * Custom app
 
 ## Tech stack
-* Node
 * React
 * Firebase
 * Semantic UI
