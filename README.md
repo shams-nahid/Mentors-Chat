@@ -18,6 +18,7 @@ It's a live [chat application](https://react-slack-clone-5d445.firebaseapp.com/)
 * Creating, cropping and uploading user avatars
 * The ability to favorite / not favorite public channels
 * Add emojis to our messages
+* Customize application color theme
 
 ### Upcoming Features
 
