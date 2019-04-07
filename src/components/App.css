@@ -188,3 +188,14 @@ body,
   left: 40px;
   right: 20px;
 }
+
+/* direct message */
+.direct_message__scrollbar {
+  overflow-x: hidden;
+  height: 450px;
+}
+
+.channels__scrollbar {
+  overflow-x: hidden;
+  height: 150px;
+}

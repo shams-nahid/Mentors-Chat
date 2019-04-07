@@ -195,7 +195,9 @@ class Channels extends Component {
             </span> {" "}
             ({channels.length}) <Icon name='add' onClick={this.openModal} />
           </Menu.Item>
-          { this.displayChannels(channels) }
+          <div className="channels__scrollbar">
+            { this.displayChannels(channels) }
+          </div>
         </Menu.Menu>
 
         {/* Add channel modal */}

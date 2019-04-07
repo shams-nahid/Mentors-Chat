@@ -111,20 +111,22 @@ class DirectMessages extends Component {
           </span> {' '}
           ({ users.length })
         </Menu.Item>
-        {users.map(user => (
-          <Menu.Item
-            key={user.uid}
-            active={user.uid === activeChannel}
-            onClick={() => this.changeChannel(user)}
-            style={{ opacity: 0.7, fontStyle: 'italic' }}
-          >
-            <Icon
-              name="circle"
-              color={this.isUserOnline(user) ? 'green' : 'red'}
-            />
-            @ {user.name}
-          </Menu.Item>
-        ))}
+        <div className="direct_message__scrollbar">
+          {users.map(user => (
+            <Menu.Item
+              key={user.uid}
+              active={user.uid === activeChannel}
+              onClick={() => this.changeChannel(user)}
+              style={{ opacity: 0.7, fontStyle: 'italic' }}
+            >
+              <Icon
+                name="circle"
+                color={this.isUserOnline(user) ? 'green' : 'red'}
+              />
+              @ {user.name}
+            </Menu.Item>
+          ))}
+        </div>
       </Menu.Menu>
     );
   }
